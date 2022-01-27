@@ -1,4 +1,6 @@
-﻿namespace Serviced
+﻿using RoverCore.Serviced;
+
+namespace Serviced
 {
     using Microsoft.Extensions.DependencyInjection;
     using System;
@@ -24,6 +26,8 @@
                 .Where(t => typeof(IServiced).IsAssignableFrom(t) && t.IsClass && !t.IsAbstract && !t.IsGenericType)
                 .ToList();
 
+            var serviceRegistry = new ServicedRegistryService();
+
             foreach (var serviceToRegister in servicesToRegister)
             {
                 var (serviceType, implementationType) = GetTypes(serviceToRegister);
@@ -38,7 +42,11 @@
                 {
                     RegisterWithTypes(services, serviceType, implementationType, lifetime);
                 }
+
+                serviceRegistry.ServiceTypes.Add(serviceToRegister);
             }
+
+            services.AddSingleton(serviceRegistry);
 
             return services;
         }
