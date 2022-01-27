@@ -2,6 +2,10 @@
 
 Serviced is a simple lightweight library that handles service registrations for you.
 
+## Author
+
+This code was originally written by Georgi Stoyanov and forked for the RoverCore project.  Many thanks to Georgi for offering his repository under the MIT license as we are doing with all RoverCore projects as well.  [Check out his original project here](https://github.com/Stoyanov8/Serviced)
+
 ## How to setup
 
 ```csharp
