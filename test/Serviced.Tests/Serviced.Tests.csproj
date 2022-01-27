@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Serviced\Serviced.csproj" />
+    <ProjectReference Include="..\..\src\RoverCore.Serviced\RoverCore.Serviced.csproj" />
   </ItemGroup>
 
 </Project>

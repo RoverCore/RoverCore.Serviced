@@ -26,5 +26,5 @@ jobs:
     - name: Publish  
       uses: brandedoutcast/publish-nuget@v2.5.2  
       with:   
-       PROJECT_FILE_PATH: src/Serviced/Serviced.csproj  
+       PROJECT_FILE_PATH: src/RoverCore.Serviced/RoverCore.Serviced.csproj  
        NUGET_KEY: ${{secrets.NUGET_API_KEY}}  

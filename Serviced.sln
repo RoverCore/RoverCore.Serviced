@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{62D5A30E-9343-4004-98EF-798B49CC6DB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serviced", "src\Serviced\Serviced.csproj", "{0CD22852-2F72-4B3E-B2CB-E3CF345513CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoverCore.Serviced", "src\RoverCore.Serviced\RoverCore.Serviced.csproj", "{0CD22852-2F72-4B3E-B2CB-E3CF345513CD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{6838267E-7618-415E-94F0-88BFFEED41E1}"
 EndProject
@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4A000BED-2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serviced.Sample", "sample\Serviced.Sample\Serviced.Sample.csproj", "{D9B1DFD2-96AB-46C9-A141-6E4AE1DE3F5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serviced.Tests", "test\Serviced.Tests\Serviced.Tests.csproj", "{FB8F9A0B-ED9C-4181-8CF3-607672F7825F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serviced.Tests", "test\Serviced.Tests\Serviced.Tests.csproj", "{FB8F9A0B-ED9C-4181-8CF3-607672F7825F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
