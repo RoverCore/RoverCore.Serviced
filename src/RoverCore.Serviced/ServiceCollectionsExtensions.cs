@@ -20,8 +20,8 @@
             var compatibleAssemblies = FilterAssemblies(assemblies);
 
             var servicesToRegister = compatibleAssemblies
-                .SelectMany(x => x.GetTypes())
-                .Where(t => typeof(IServiced).IsAssignableFrom(t))
+                .SelectMany(x => x.GetExportedTypes())
+                .Where(t => typeof(IServiced).IsAssignableFrom(t) && t.IsClass && !t.IsAbstract && !t.IsGenericType)
                 .ToList();
 
             foreach (var serviceToRegister in servicesToRegister)
