@@ -22,7 +22,7 @@ namespace Serviced
             var compatibleAssemblies = FilterAssemblies(assemblies);
 
             var servicesToRegister = compatibleAssemblies
-                .SelectMany(x => x.GetExportedTypes())
+                .SelectMany(x => x.GetTypes())
                 .Where(t => typeof(IServiced).IsAssignableFrom(t) && t.IsClass && !t.IsAbstract && !t.IsGenericType)
                 .ToList();
 
