@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Georgi Stoyanov</Authors>
+    <Authors>Georgi Stoyanov, Michael Tanczos</Authors>
     <Company />
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Serviced is a simple lightweight library that handles service registrations for you.</Description>
-    <Version>1.0.7</Version>
+    <Version>1.0.8</Version>
     <Product>RoverCore.Serviced</Product>
     <RepositoryUrl>https://github.com/RoverCore/Serviced</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

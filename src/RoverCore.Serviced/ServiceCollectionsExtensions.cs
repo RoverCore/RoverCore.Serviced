@@ -25,7 +25,7 @@ namespace Serviced
                 .SelectMany(x => x.GetTypes())
                 .Where(t => typeof(IServiced).IsAssignableFrom(t) && t.IsClass && !t.IsAbstract && !t.IsGenericType)
                 .ToList();
-
+            
             var serviceRegistry = new ServicedRegistryService();
 
             foreach (var serviceToRegister in servicesToRegister)
